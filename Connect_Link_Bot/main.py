@@ -32,4 +32,4 @@ async def on_message(message):
         groups = p.groups()
         await client.send_message(message.channel, "steam://connect/" + groups[0] + "/" + groups[1])
 
-client.run('MzcxMjc2MDAwMDIzMjgxNjY1.DMzRjQ.XhZjefYc0wdRSzsIO9IhJwPmulk', bot=True)
+client.run('<token here>', bot=True)
