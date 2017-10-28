@@ -81,4 +81,4 @@ async def on_message(message):
 
         #send image
         await client.send_file(message.channel, 'log.png')
-client.run('MzE4NTAwMzM4NDQzMjIzMDUx.DAzSMQ.K9tmVQLuQbejvGAG0CVp3rxnGUw', bot=True)
+client.run('<token here>', bot=True)
