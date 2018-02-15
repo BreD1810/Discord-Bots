@@ -25,11 +25,14 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    #Checks if there is a match using regex
-    p = re.compile("connect\s*(\S+)\s*;\s*password\s*(\S+)").match(message.content)
-    #Run if there is a match.
-    if p:
-        groups = p.groups()
-        await client.send_message(message.channel, "steam://connect/" + groups[0] + "/" + groups[1])
-
+    
+    if message.content.startswith('connect '):
+        tempMsg = str.replace(message.content, 'connect ');
+        temp = temMsg.partition(";password ")
+        if temp[2].startswith('"') and temp[2].endswith('"'):
+            temp[2] = temp[2].lstrip('"')
+            temp[2] = temp[2].rstrip('"')
+            
+        await client.send_message(message.channel, "steam://connect/" + temp[0] + "/" + temp[2])
+        
 client.run('<token here>', bot=True)
