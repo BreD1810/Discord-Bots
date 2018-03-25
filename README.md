@@ -20,4 +20,4 @@ This bot takes a tf2center links as an input, and then produces some output to t
 
 For the bot to join your server, click [here](https://discordapp.com/api/oauth2/authorize?client_id=427139325889871882&scope=bot).
 
-![alt text](https://imgur.com/m0bMvLR "TF2C bot output example.")
+![alt text](https://i.imgur.com/m0bMvLR.png "TF2C bot output example.")
