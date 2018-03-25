@@ -14,3 +14,10 @@ This bot takes a logs.tf link as an input, and then produces some output to the 
 For the bot to join your server, click [here](https://discordapp.com/oauth2/authorize?&client_id=318500338443223051&scope=bot&permissions=0).
 
 ![alt text](http://bredley.co.uk/images/TF2LogsBotGithub.png "Logs bot output example.")
+
+## TF2C Bot
+This bot takes a tf2center links as an input, and then produces some output to the server chat. This output includes the map, gamemode, config, offclassing status and mumble required status.
+
+For the bot to join your server, click [here](https://discordapp.com/api/oauth2/authorize?client_id=427139325889871882&scope=bot).
+
+![alt text](https://imgur.com/m0bMvLR "TF2C bot output example.")
