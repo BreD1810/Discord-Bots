@@ -61,13 +61,13 @@ async def links(ctx):
 @bot.command()
 async def yeet(ctx):
     if not isinstance(ctx.message.channel, discord.DMChannel):
-        await ctx.send(':yeet:')
+        await ctx.send('<:yeet:481453557866954753>')
 
 
 @bot.command()
 async def dab(ctx):
     if not isinstance(ctx.message.channel, discord.DMChannel):
-        await ctx.send(':kinedab2::kinedab')
+        await ctx.send('<:kinedab2:474552682271735819><:kinedab:392164919853711370>')
 
 
 @bot.event
