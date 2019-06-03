@@ -15,6 +15,13 @@ async def on_ready():
 
 
 @bot.command()
+async def stream(ctx):
+    if ctx.message.author.id == 110810800104448000:
+        message = ctx.message.content
+        message = message[8:]
+        await bot.get_channel(297372508758212609).send('@everyone ' + message + " https://www.twitch.tv/unicornowl")
+
+@bot.command()
 async def help(ctx):
     await ctx.message.author.send('Hi, i\'m unicornowl\'s Discord bot! My commands are:\n' +
                    ':unicorn:`!links` - Links to unicornowl\'s other pages!\n' +
